@@ -1,0 +1,5 @@
+# Log in to the server.  This can be done only once.
+wget -O Authentication.log --save-cookies auth.rda_ucar_edu  --post-data 'email=********@gmail.com&passwd=********&action=login' https://rda.ucar.edu/cgi-bin/login
+
+# Now grab the page or pages we care about.
+wget -N --load-cookies auth.rda_ucar_edu http://rda.ucar.edu/data/ds083.2/grib2/2010/2010.02/fnl_20100201_00_00.grib2
