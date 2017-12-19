@@ -9,8 +9,8 @@ from ecmwfapi import ECMWFDataServer
 #data_i = "20160101"
 #data_f = "20160115"
 
-dt = datetime.datetime(2006, 8, 18)
-end = datetime.datetime(2006, 8, 21)
+dt = datetime.datetime(2011, 6, 12)
+end = datetime.datetime(2011, 6, 19)
 step = datetime.timedelta(days=1)
 
 date_list = []
@@ -35,7 +35,7 @@ for date in date_list :
             'step'      : "0",
             'grid'      : "128", # "0.75/0.75",   "0.125/0.125",   "128"
             'time'      : "00/06/12/18",
-            'area'      : "42/333/22/353",
+            'area'      : "42/328/22/355",
             'date'      : str(date) + "/to/" + str(date),
             'type'      : "an",
             'class'     : "ei",

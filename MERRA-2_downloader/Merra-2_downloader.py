@@ -15,8 +15,8 @@
 down_type = 'http'
 
 # edit data to download
-data_i = 20060818
-data_f = 20060821
+data_i = 20110610
+data_f = 20110620
 delta_dias = 1
 
 # edit area to download
@@ -94,16 +94,16 @@ if down_type == 'ftp' :
 
     for i in range(len(date_list)) :
 
-        if (int(str(date_list[i])[0:4]) > 1980 and int(str(date_list[i])[0:4]) < 1991) :
+        if (int(str(date_list[i])[0:4]) >= 1980 and int(str(date_list[i])[0:4]) <= 1991) :
             stream = 'MERRA2_100'
 
-        elif (int(str(date_list[i])[0:4]) > 1992 and int(str(date_list[i])[0:4]) < 2000) :
+        elif (int(str(date_list[i])[0:4]) >= 1992 and int(str(date_list[i])[0:4]) <= 2000) :
             stream = 'MERRA2_200'
 
-        elif (int(str(date_list[i])[0:4]) > 2001 and int(str(date_list[i])[0:4]) < 2010) :
+        elif (int(str(date_list[i])[0:4]) >= 2001 and int(str(date_list[i])[0:4]) <= 2010) :
             stream = 'MERRA2_300'
 
-        elif (int(str(date_list[i])[0:4]) > 2011) :
+        elif (int(str(date_list[i])[0:4]) >= 2011) :
             stream = 'MERRA2_400'
 
         for l in range(1,len(var_list)) :
@@ -122,16 +122,16 @@ elif down_type == 'http' :
 
     for i in range(len(date_list)) :
 
-        if (int(str(date_list[i])[0:4]) > 1980 and int(str(date_list[i])[0:4]) < 1991) :
+        if (int(str(date_list[i])[0:4]) >= 1980 and int(str(date_list[i])[0:4]) <= 1991) :
             stream = 'MERRA2_100'
 
-        elif (int(str(date_list[i])[0:4]) > 1992 and int(str(date_list[i])[0:4]) < 2000) :
+        elif (int(str(date_list[i])[0:4]) >= 1992 and int(str(date_list[i])[0:4]) <= 2000) :
             stream = 'MERRA2_200'
 
-        elif (int(str(date_list[i])[0:4]) > 2001 and int(str(date_list[i])[0:4]) < 2010) :
+        elif (int(str(date_list[i])[0:4]) >= 2001 and int(str(date_list[i])[0:4]) <= 2010) :
             stream = 'MERRA2_300'
 
-        elif (int(str(date_list[i])[0:4]) > 2011) :
+        elif (int(str(date_list[i])[0:4]) >= 2011) :
             stream = 'MERRA2_400'
 
         for l in range(1,len(var_list)) :
