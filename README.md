@@ -20,7 +20,7 @@ $HOME/.ecmwfapirc
 ```
 
 2. FNL:
-Change you email and password in FNL_downloader.R file
+Change you email, password is asked in command line
 
 3. SST:
 Dont need account details
